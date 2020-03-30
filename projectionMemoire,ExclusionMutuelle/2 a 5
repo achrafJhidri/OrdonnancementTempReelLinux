@@ -1,0 +1,26 @@
+Question 2
+
+Non, le programme n'est pas consistant. Solution : exclusion mutuelle
+
+
+Question 3
+
+On l'a vu au cours
+
+1. MOVE  $i , r0 // mémoire i = > registre
+2. INC   r0      // incrementer le registre
+3. STORE r0 , $i // registre = > mémoire i
+
+
+Question 4
+
+Supposons qu'on a 2 processus P1, P2
+Exécution correcte :
+P1-1 -- P1-2 -- P1-3 -- P2-1 -- P2-2 -- P2-3
+Exécution incorrecte :
+P1-1 -- P2-1 -- P1-2 -- P1-3 -- P2-2 -- P2-3
+
+
+Question 5
+
+On isole une zone de code qui ne doit être exécutée que par un seul processeur à la fois. (exclusion mutuelle)
