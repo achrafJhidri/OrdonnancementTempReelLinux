@@ -25,7 +25,8 @@ barriere() {
 
         if (nb == N) {
                 f.broadcast();
-                nb--;
+                nb--;//empeche que chacun fais un broadcast,
+                     //on peut faire nb=0 si on compte réutiliser la barriere
         }
         m.unlock();
 }
